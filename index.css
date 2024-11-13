@@ -4,13 +4,14 @@ html {
 
 body {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   padding-top: 10em;
   -ms-overflow-style: none;
+  background-color: #000000;
 }
 
 * {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
