@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Fira+Code:wght@300..700&family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 사이드바 -->
+    <aside class="side-bar">
+      <section class="side-bar__icon-box">
+        <section class="side-bar__icon-1">
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+      </section>
+      <ul>
+        <li class="menu-text"><a href="#main-section">Main</a></li>
+        <li class="menu-text"><a href="#about-me-section">About me</a></li>
+        <li class="menu-text"><a href="#project-section">Project</a></li>
+        <li class="menu-text"><a href="#contact-section">Contact</a></li>
+      </ul>
+    </aside>
+
+    <!-- 사이드바 -->
+
+    <div id="all">
+      <h1 id="main-section">
+        Hi, I'm
+        <span
+          class="typewrite"
+          data-period="2000"
+          data-type='["H0Y4.", "a student.", "web developer."]'
+        >
+        </span>
+      </h1>
+
+      <p class="intro-text">Hi, I'm H0Y4 who is learning web dev skills!</p>
+      <label>
+        <input type="checkbox" id="reveal-toggle" style="display: none" />
+        <p id="click-text">
+          <span class="intro-text">►More information◄</span>
+          <span class="arrow">▼</span>
+        </p>
+        <p id="reveal-text">
+          School :
+          <a
+            href="https://school.gyo6.net/gbsw/main.do?sysId=gbsw"
+            target="_blank"
+            >GBSW</a
+          >
+        </p>
+        <p id="reveal-text">Age : 17+ KR</p>
+        <p id="reveal-text">
+          Studying : React / Spring Boot / Certification / etc.
+        </p>
+        <p id="reveal-text">
+          Description :<span>
+            My real name is Taeho Kim, You can call me Hoya, taeho Kim, whatever
+            you want.<br />
+          </span>
+        </p>
+        <p id="reveal-text"></p>
+      </label>
+
+      <div id="mini-title">
+        <h1 id="about-me-section">About me</h1>
+        <div id="pfp-container">
+          <img
+            id="pfp"
+            src="https://avatars.githubusercontent.com/u/108007761?v=4"
+            alt="Profile Picture"
+          />
+          <a id="pfp-description" href="https://git.io/typing-svg">
+            <img
+              src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&weight=420&size=19&duration=600&pause=200&color=F7F7F7&multiline=true&repeat=false&width=500&height=150&lines=%E2%96%8FHi%2C+I'm+H0Y4(rlaxogh76)+%F0%9F%91%8B;%E2%96%8FI'm+interested+in+Design%2C+Create%2C+drawing+.;%E2%96%8FI'm+learning+FrontEnd+%26+BackEnd.+%F0%9F%8C%90;%E2%96%8FI'm+currently+learning+Spring%2C+React%2C;%E2%96%8F%2C+and+other+technologies.+%F0%9F%93%96;%E2%96%8FI+make+a+lot+of+mistakes%2C+but+I'm+trying+my+best!++%F0%9F%94%A5"
+              alt="Typing SVG"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- 프로젝트 섹션 -->
+      <div id="mini-title" class="fade-in-out">
+        <h1 id="project-section">Project 🛠️</h1>
+        <div class="all_projects">
+          <div class="projects">
+            <div class="project-box">
+              <img
+                src="https://private-user-images.githubusercontent.com/108007761/365577901-982d4ad7-b35d-47dc-bef5-cdd7972ee122.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI1MzAzODMsIm5iZiI6MTczMjUzMDA4MywicGF0aCI6Ii8xMDgwMDc3NjEvMzY1NTc3OTAxLTk4MmQ0YWQ3LWIzNWQtNDdkYy1iZWY1LWNkZDc5NzJlZTEyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTEyNVQxMDIxMjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lODQ4MWI5YmMxMDM5NWM3MWJiYzQ3YjMzODQ5NmQ4MzE3N2IxMDNmNWY5ZmVkZDUzNzFiZTFjOWY3NjU5OTExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.uvD083vsx5BsWmQWgezGRANMti2f4sMQ1Q2VaKr3tAU"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="project-title">ToDo List</h2>
+              <p class="project-description">ToDo List (public)</p>
+              <a
+                href="https://github.com/rlaxogh76/Todo-List"
+                class="project-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+            <div class="project-box">
+              <img src="recipeSaver.png" alt="Project 2" class="project-img" />
+              <h2 class="project-title">RecipeSaver</h2>
+              <p class="project-description">
+                자바 프로젝트 / 레시피 저장 & 공유 목적으로 이루어진
+                웹사이트입니다. (private)
+              </p>
+              <a
+                href="https://github.com/rlaxogh76/RecipeSaver"
+                class="project-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <a href="https://github.com/rlaxogh76" target="_blank"
+            >See more on GitHub</a
+          >
+        </div>
+      </div>
+
+      <div id="mini-title">
+        <h1 id="contact-section">Contact 📫</h1>
+        <a
+          href="https://discordapp.com/users/867071958071771157"
+          target="_blank"
+        >
+          <img
+            id="discord"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0arBHeKNo3byLD3EqSSJHFzkE16G36Ye6w&s"
+          />
+        </a>
+        <a href="mailto:btm.email2769@gmail.com" target="_blank">
+          <img
+            id="gmail"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUARk_F-8yXeRmut_ZfRx6zPO48TEJ3IFvA&s"
+          />
+        </a>
+        <!-- <img id="mona-img" src="mona-loading-dark-7701a7b97370.gif" /> -->
+      </div>
+
+      <script>
+        function handleScroll() {
+          const divs = document.querySelectorAll("div");
+          divs.forEach((div) => {
+            const rect = div.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Fade in when element is fully within a specific range in the viewport
+            if (
+              rect.top < windowHeight * 0.5 &&
+              rect.bottom > windowHeight * 0.2
+            ) {
+              div.style.opacity = 1; // Show when mostly in view
+            } else {
+              div.style.opacity = 0; // Hide when out of range
+            }
+          });
+        }
+
+        // Listen for scroll events
+        window.addEventListener("scroll", handleScroll);
+      </script>
+    </div>
+  </body>
+</html>
